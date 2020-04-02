@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "Mobile Flashcards",
+    "name": "mobile-flashcards",
     "slug": "mobile-flashcards",
     "privacy": "public",
-    "sdkVersion": "35.0.0",
+    "sdkVersion": "36.0.0",
     "platforms": [
       "ios",
       "android",
@@ -13,8 +13,9 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/img/splash/splash.png",
-      "resizeMode": "cover"
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,7 +23,8 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "description": "Udacity Mobile Flash Cards is the 3rd project for the React Nano degree. It uses react native to build a mobile app that allows you to add decks, add cards to the decks and quiz yourself for a test/exam.",
-    "githubUrl": "https://github.com/cangir/mobile-flashcards"
+    "ios": {
+      "supportsTablet": true
+    }
   }
 }
